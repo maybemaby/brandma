@@ -1,0 +1,27 @@
+<header
+  class="flex sm:flex-row flex-col justify-between items-center py-4 gap-5"
+>
+  <h1 class="text-4xl text-accent">BrandMa</h1>
+  <nav class="text-lg sm:text-md flex gap-10 lg:text-lg">
+    <a href="/" a-link>Home</a>
+    <a href="/projects" a-link>Projects</a>
+    <a href="/blog" a-link>Blog</a>
+    <button id="toggle-dark">
+      <div
+        class="h-full text-xl hover:text-primary"
+        dark:i-carbon-sun
+        i-carbon-moon
+      >
+      </div>
+    </button>
+  </nav>
+</header>
+
+<script>
+  import { toggleDark } from "../helpers/toggleDark";
+
+  const button = document.querySelector("#toggle-dark");
+  if (button) {
+    button.addEventListener("click", toggleDark);
+  }
+</script>
