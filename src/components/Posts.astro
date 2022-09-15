@@ -1,0 +1,18 @@
+---
+import { PostData } from "../lib/types";
+import PostPreview from "./PostPreview.astro";
+
+const props = Astro.props as { posts: PostData[] };
+---
+
+<section id="posts" class="py-4 flex flex-col gap-10">
+  <ul class="list-none">
+    {
+      props.posts.map((post) => (
+        <li>
+          <PostPreview post={post} />
+        </li>
+      ))
+    }
+  </ul>
+</section>

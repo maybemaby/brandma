@@ -26,6 +26,10 @@ export default defineConfig({
             sans: "DM Sans",
             serif: "DM Serif Display",
             mono: "DM Mono",
+            body: {
+              name: "Source Sans Pro",
+              weights: ["200", "300", "400", "500"],
+            },
           },
         }),
       ],
@@ -38,8 +42,8 @@ export default defineConfig({
       theme: {
         colors: {
           primary: "#3b82f6",
-          "primary-d": "#2563eb",
-          "primary-l": "#60a5fa",
+          "primary-dark": "#1d4ed8",
+          "primary-light": "#60a5fa",
           accent: "#10b981",
           "accent-d": "#059669",
           "accent-l": "#34d399",

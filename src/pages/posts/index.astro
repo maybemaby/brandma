@@ -1,0 +1,12 @@
+---
+import Posts from "../../components/Posts.astro";
+import Layout from "../../layouts/Layout.astro";
+import { PostFrontMatter } from "../../lib/types";
+const postGlob = await Astro.glob<PostFrontMatter>("./*.md");
+const posts = postGlob.map((glob) => ({ ...glob.frontmatter, url: glob.url }));
+---
+
+<Layout>
+  <h2 class="text-xl font-bold underline">Recent Posts</h2>
+  <Posts posts={posts} />
+</Layout>

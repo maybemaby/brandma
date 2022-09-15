@@ -1,0 +1,27 @@
+---
+import { PostData } from "../lib/types";
+
+const props = Astro.props as { post: PostData };
+---
+
+<div class="flex flex-row gap-5 items-center">
+  <div class="border-solid border-black dark:border-slate-50 border-2">
+    <a href={props.post.url}>
+      <img
+        width="200"
+        class="grow-0 aspect-auto min-w-[120px] sm:min-w-[200px] object-fill"
+        src={props.post.preview.imageUrl}
+        alt={props.post.title}
+      />
+    </a>
+  </div>
+
+  <span class="grow flex flex-col self-start">
+    <a href={props.post.url}>
+      <h3 class="text-md hover:text-primary">{props.post.title}</h3>
+    </a>
+    <p class="font-body text-sm font-extralight">
+      {props.post.preview.description}
+    </p>
+  </span>
+</div>

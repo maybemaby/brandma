@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { ProjectFrontMatter } from "../../lib/types";
+const projects = await Astro.glob<ProjectFrontMatter>("./*.md");
+const data = projects.map((proj) => ({ ...proj.frontmatter, url: proj.url }));
+---
+
+<Layout>
+  <h2 class="text-xl underline">Projects</h2>
+  {data.map((proj) => <a href={proj.url}>{proj.title}</a>)}
+</Layout>
