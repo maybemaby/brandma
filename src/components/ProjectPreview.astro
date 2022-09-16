@@ -13,6 +13,13 @@ const { project, url } = Astro.props as {
       {project.title}
     </h2>
   </a>
+  <div class="flex gap-4 w-full flex-wrap">
+    {
+      project.tags.map((tag) => (
+        <span class="bg-primary px-2 rounded-md">{tag}</span>
+      ))
+    }
+  </div>
 
   <p>{project.intro}</p>
   <img src={project.preview} alt={`${project.title} preview screens`} />

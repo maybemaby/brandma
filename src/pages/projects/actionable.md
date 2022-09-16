@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/ProjectLayout.astro
 title: Actionable
 preview: actionable-preview.jpg
 intro: "Actionable is a website for generating Github Actions workflows interactively. I built the site to help beginners start
