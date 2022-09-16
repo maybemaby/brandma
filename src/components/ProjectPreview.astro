@@ -1,0 +1,47 @@
+---
+import { ProjectFrontMatter } from "../lib/types";
+
+const { project, url } = Astro.props as {
+  project: ProjectFrontMatter;
+  url: string;
+};
+---
+
+<article class="flex flex-col gap-5">
+  <a href={url} a-link>
+    <h2 class="text-xl font-bold">
+      {project.title}
+    </h2>
+  </a>
+
+  <p>{project.intro}</p>
+  <img src={project.preview} alt={`${project.title} preview screens`} />
+</article>
+
+<style scoped>
+  h2 {
+    width: fit-content;
+  }
+  a {
+    width: fit-content;
+  }
+  img {
+    aspect-ratio: auto;
+    min-width: 350px;
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      width: 620px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    img {
+      width: 760px;
+      align-self: center;
+    }
+  }
+</style>

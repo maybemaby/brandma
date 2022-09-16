@@ -1,6 +1,12 @@
 export interface ProjectFrontMatter {
   title: string;
   tags: string[];
+  preview: string;
+  intro: string;
+  links?: {
+    source?: string;
+    live?: string;
+  };
   meta?: {
     description?: string;
   };
