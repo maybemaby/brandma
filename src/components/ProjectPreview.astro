@@ -8,7 +8,7 @@ const { project, url } = Astro.props as {
 ---
 
 <article class="flex flex-col gap-5">
-  <a href={url} a-link>
+  <a href={`/public/${url}`} a-link>
     <h2 class="text-xl font-bold">
       {project.title}
     </h2>
