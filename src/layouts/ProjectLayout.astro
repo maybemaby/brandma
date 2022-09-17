@@ -41,11 +41,12 @@ const {
   </script>
   <body font-sans>
     <Header />
-    <main>
+    <main font-body>
+      <h2>{projectTitle}</h2>
       <slot />
     </main>
 
-    <style>
+    <style scoped>
       :root {
         --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
         --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
@@ -79,12 +80,39 @@ const {
         width: 100%;
         padding-top: 40px;
       }
+
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 20px 0;
+        color: #1e40af;
+      }
+
+      html.dark h2 {
+        color: #3b82f6;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        padding: 10px 0;
+      }
     </style>
 
     <style is:global>
       code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        padding: 10px 0;
+        font-weight: 500;
+      }
+
+      ul {
+        list-style: circle;
+        padding: 0 20px;
       }
     </style>
   </body>
