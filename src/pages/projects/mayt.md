@@ -3,6 +3,9 @@ layout: ../../layouts/ProjectLayout.astro
 title: Mayt
 preview: mayt-preview.jpg
 intro: "Mayt is a self hosted site for powering up Youtube video organization. This project was motivated by my desire for a way to organize music I listen to on Youtube. Features tagging, pinning, and playlists that are searchable."
+links:
+  source: https://github.com/maybemaby/mayt
+  live: https://mayt.vercel.app/
 tags:
   - Next.js
   - React
