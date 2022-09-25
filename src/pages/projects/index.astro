@@ -7,7 +7,7 @@ const data = projects.map((proj) => ({ ...proj.frontmatter, url: proj.url }));
 ---
 
 <Layout>
-  <section id="projects" class="flex flex-col gap-10">
+  <section id="projects" class="flex flex-col gap-15">
     {data.map((proj) => <ProjectPreview project={proj} url={proj.url} />)}
   </section>
 </Layout>

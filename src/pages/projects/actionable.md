@@ -12,6 +12,7 @@ tags:
   - React
   - Typescript
   - Github Actions
+  - Cypress
 meta:
   description: Project for generating Github Actions workflows interactively.
 ---
@@ -26,3 +27,4 @@ meta:
   - Utilize lazy loading and code splitting to reduce initial load.
   - How JSON data structure translates to YAML.
   - Greater understanding of the Github Actions platform.
+  - Using Cypress for integration testing
