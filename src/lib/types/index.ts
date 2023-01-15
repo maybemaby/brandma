@@ -21,6 +21,7 @@ export interface PostFrontMatter {
   meta?: {
     description?: string;
   };
+  published?: string;
 }
 
 export interface PostData extends PostFrontMatter {

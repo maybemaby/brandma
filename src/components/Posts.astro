@@ -6,7 +6,7 @@ const props = Astro.props as { posts: PostData[] };
 ---
 
 <section id="posts" class="py-4 flex flex-col gap-10">
-  <ul class="list-none">
+  <ul class="list-none px-0">
     {
       props.posts.map((post) => (
         <li>
