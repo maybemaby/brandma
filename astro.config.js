@@ -1,10 +1,4 @@
 import { defineConfig } from "astro/config";
-import {
-  presetUno,
-  presetAttributify,
-  presetIcons,
-  presetWebFonts,
-} from "unocss";
 import Unocss from "@unocss/astro";
 
 import sitemap from "@astrojs/sitemap";

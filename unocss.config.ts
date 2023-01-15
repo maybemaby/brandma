@@ -52,6 +52,24 @@ export default defineConfig({
         ["text-fill-color"]: "transparent",
       },
     ],
+    [
+      "primary-gradient",
+      {
+        ["background"]: `linear-gradient(
+          45deg,
+          hsl(217deg 65% 59%) 9%,
+          hsl(218deg 63% 57%) 32%,
+          hsl(218deg 61% 56%) 39%,
+          hsl(219deg 59% 54%) 44%,
+          hsl(219deg 57% 53%) 47%,
+          hsl(220deg 55% 52%) 51%,
+          hsl(220deg 54% 50%) 55%,
+          hsl(221deg 55% 49%) 60%,
+          hsl(222deg 56% 47%) 68%,
+          hsl(222deg 57% 46%) 98%
+        );`,
+      },
+    ],
   ],
   theme: {
     colors: {
@@ -61,6 +79,20 @@ export default defineConfig({
       accent: "#10b981",
       "accent-d": "#059669",
       "accent-l": "#34d399",
+      "primary-gradient": `
+      linear-gradient(
+        45deg,
+        hsl(217deg 91% 60%) 9%,
+        hsl(217deg 77% 55%) 34%,
+        hsl(217deg 66% 51%) 43%,
+        hsl(217deg 63% 47%) 49%,
+        hsl(217deg 64% 43%) 54%,
+        hsl(217deg 64% 39%) 58%,
+        hsl(217deg 65% 35%) 62%,
+        hsl(217deg 66% 31%) 67%,
+        hsl(217deg 67% 27%) 74%,
+        hsl(217deg 69% 24%) 93%
+      );`,
     },
   },
 });
