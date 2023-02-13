@@ -7,24 +7,28 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
+    "build:only": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^1.2.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.8.0"
+    "astro": "^2.0.0",
+    "motion": "^10.15.5",
+    "preact": "^10.11.3"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.7",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
-    "@unocss/astro": "^0.48.0",
+    "@unocss/astro": "^0.49.0",
     "eslint": "^8.23.1",
     "eslint-plugin-astro": "^0.21.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.7.0",
     "typescript": "^4.9.3",
-    "unocss": "^0.48.0"
+    "unocss": "^0.49.0"
   }
 }

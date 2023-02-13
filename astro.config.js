@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import Unocss from "@unocss/astro";
+import preact from "@astrojs/preact";
 
 import sitemap from "@astrojs/sitemap";
 
@@ -13,5 +14,5 @@ export default defineConfig({
       langs: ["css", "jsx", "js", "ts", "tsx"],
     },
   },
-  integrations: [Unocss(), sitemap()],
+  integrations: [Unocss(), sitemap(), preact()],
 });

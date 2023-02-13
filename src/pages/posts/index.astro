@@ -7,6 +7,6 @@ const posts = postGlob.map((glob) => ({ ...glob.frontmatter, url: glob.url }));
 ---
 
 <Layout>
-  <h2 class="text-xl font-bold underline">Recent Posts</h2>
+  <h2 class="text-xl font-bold">Recent Posts</h2>
   <Posts posts={posts} />
 </Layout>

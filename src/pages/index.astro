@@ -1,10 +1,12 @@
 ---
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import { CardMaker } from "../components/preact/CardMaker";
 ---
 
 <Layout>
   <Hero />
+  <CardMaker className="mt-5" client:load />
 </Layout>
 
 <style>
